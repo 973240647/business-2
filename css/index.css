@@ -1,0 +1,492 @@
+/*@border: #ced4da; //边框色
+@font1: #888; //字体色
+@font2: #9e9e9e; //字体色
+@font3: #e8621e;*/
+#index-title {
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+}
+#index-title .index-title-left {
+  width: 30%;
+}
+#index-title .index-title-left p {
+  font-size: 24px;
+  padding: 10px 0;
+  position: relative;
+}
+#index-title .index-title-left p::before {
+  content: " ";
+  width: 0px;
+  height: 2px;
+  left: -15%;
+  top: 50%;
+  transition: ease 0.5s;
+  transform: translateY(-50%);
+  background: #343434;
+  position: absolute;
+}
+#index-title .index-title-left span {
+  font-size: 20px;
+}
+.index-brc-rt {
+  position: absolute;
+  width: 45%;
+  height: 60%;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+.index-brc-rt .index-brc-rt-title {
+  font-size: 30px;
+  position: absolute;
+  right: -45%;
+  transform: rotate(90deg);
+}
+.index-brc-rt span {
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  bottom: 30%;
+  padding: 0 20px;
+  transform: rotate(90deg);
+}
+.index-brc-rt span::after {
+  content: " ";
+  width: 25%;
+  height: 1px;
+  top: 35%;
+  right: -20%;
+  background: #343434;
+  position: absolute;
+}
+.index-brc-rt .index-brc-rt-num {
+  position: absolute;
+  font-size: 60px;
+  left: 30%;
+  bottom: 4%;
+}
+main #index-banner {
+  width: 100%;
+  height: 800px;
+}
+main #index-brief {
+  padding: 60px 0;
+}
+main #index-brief .main-center .index-brief-block {
+  width: 100%;
+  padding: 40px 0;
+  height: 550px;
+}
+main #index-brief .main-center .index-brief-block .index-brief-left {
+  width: 10%;
+  float: left;
+}
+main #index-brief .main-center .index-brief-block .index-brief-left ul li {
+  position: relative;
+  font-size: 20px;
+  color: #959595;
+  padding: 15px 0 15px 20px;
+}
+main #index-brief .main-center .index-brief-block .index-brief-left .li-active {
+  color: #343434;
+}
+main #index-brief .main-center .index-brief-block .index-brief-left .li-left-xt-active {
+  height: 20px !important;
+}
+main #index-brief .main-center .index-brief-block .index-brief-left .li-left-xt {
+  width: 2px;
+  height: 0;
+  left: 0;
+  transition: ease 0.3s;
+  background: #343434;
+  position: absolute;
+}
+main #index-brief .main-center .index-brief-block .index-brief-left ul li:hover {
+  color: #343434;
+}
+main #index-brief .main-center .index-brief-block .index-brief-left ul li:hover .li-left-xt {
+  height: 20px;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right {
+  float: right;
+  width: 90%;
+  height: 100%;
+  display: flex;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-left {
+  width: 50%;
+  position: relative;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-left .index-brl-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  background: #ebebeb;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-left .index-brl-img img {
+  width: 100%;
+  height: 100%;
+  transition: ease 0.3s;
+  object-fit: cover;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-right {
+  width: 50%;
+  position: relative;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-right .index-br-content {
+  width: 100%;
+  left: -40%;
+  top: 20%;
+  z-index: 7;
+  padding: 40px 45px;
+  background: white;
+  position: absolute;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-right .index-br-content .index-brc-title {
+  font-size: 20px;
+  transition: ease 0.3s;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-right .index-br-content span {
+  color: #666;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-right .index-br-content .index-brc-content {
+  font-size: 17px;
+  padding-top: 15px;
+  line-height: 28px;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-right .index-brc-rb {
+  width: 45%;
+  height: 40%;
+  bottom: 0;
+  right: 0;
+  z-index: 8;
+  background: #ebebeb;
+  position: absolute;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-right .index-brc-rb .index-brc-rb-img {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-right .index-brc-rb .index-brc-rb-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-right .index-brc-button {
+  width: 40%;
+  height: 20%;
+  bottom: 0;
+  left: 35%;
+  z-index: 9;
+  background: white;
+  display: flex;
+  position: absolute;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-right .index-brc-button .index-brc-prev,
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-right .index-brc-button .index-brc-next {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-right .index-brc-button .index-brc-prev i,
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-right .index-brc-button .index-brc-next i {
+  font-size: 30px;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right .index-br-right .index-brc-button .index-brc-prev::after {
+  content: " ";
+  width: 2px;
+  height: 30%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #343434;
+  position: absolute;
+}
+main #index-brief .main-center .index-brief-block .index-brief-right:hover .index-br-left img {
+  transform: scale(1.1);
+}
+main #index-brief .main-center .index-brief-block .index-brief-right:hover .index-brc-title {
+  color: #ee1c25;
+}
+main #index-brief:hover #index-title .index-title-left p::before,
+main #index-product-container:hover #index-title .index-title-left p::before,
+main #index-case-container:hover #index-title .index-title-left p::before {
+  width: 35px;
+  opacity: 1;
+}
+main #data-container {
+  width: 100%;
+  height: 200px;
+  background: url(../images/bg1.jpg);
+}
+main #data-container .main-center {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+main #data-container .main-center .data-block {
+  width: 25%;
+  text-align: center;
+}
+main #data-container .main-center .data-block .data-top {
+  color: white;
+}
+main #data-container .main-center .data-block .data-top p {
+  font-size: 50px;
+  display: inline;
+}
+main #data-container .main-center .data-block .data-top span {
+  position: absolute;
+  padding: 0 5px;
+}
+main #data-container .main-center .data-block .data-bottom {
+  color: #959595;
+  padding: 10px 0;
+}
+main #index-product-container {
+  width: 100%;
+  padding: 150px 0 60px;
+}
+main #index-product-container .main-center .index-product-block {
+  padding: 40px 0;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+main #index-product-container .main-center .index-product-block .index-pb-leftblock {
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+main #index-product-container .main-center .index-product-block .index-pb-leftblock .index-pb-left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+}
+main #index-product-container .main-center .index-product-block .index-pb-leftblock .index-pb-left .index-pbl-left {
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+}
+main #index-product-container .main-center .index-product-block .index-pb-leftblock .index-pb-left .index-pbl-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: ease 0.3s;
+}
+main #index-product-container .main-center .index-product-block .index-pb-leftblock .index-pb-left .index-pbl-right {
+  width: 40%;
+  padding: 80px 50px;
+  background: #212121;
+}
+main #index-product-container .main-center .index-product-block .index-pb-leftblock .index-pb-left .index-pbl-right .index-pbr-p1 {
+  font-size: 20px;
+  color: white;
+  padding-bottom: 20px;
+}
+main #index-product-container .main-center .index-product-block .index-pb-leftblock .index-pb-left .index-pbl-right span {
+  color: #959595;
+}
+main #index-product-container .main-center .index-product-block .index-pb-leftblock .index-pb-left .index-pbl-right .index-pbr-p2 {
+  color: #959595;
+  padding: 30px 0;
+  line-height: 28px;
+}
+main #index-product-container .main-center .index-product-block .index-pb-leftblock .index-pb-left .index-pbl-right a {
+  color: #959595;
+  position: relative;
+}
+main #index-product-container .main-center .index-product-block .index-pb-leftblock .index-pb-left .index-pbl-right a::after {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  right: -30%;
+  transition: ease 0.3s;
+  position: absolute;
+}
+main #index-product-container .main-center .index-product-block .index-pb-leftblock .index-pb-left:hover .index-pbl-left img {
+  transform: scale(1.1);
+}
+main #index-product-container .main-center .index-product-block .index-pb-leftblock .index-pb-left:hover .index-pbl-right a::after {
+  content: ">";
+  right: -50%;
+}
+main #index-product-container .main-center .index-product-block .index-pb-right {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block,
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block-button {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  background: #ebebeb;
+  position: absolute;
+}
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block .index-pbr-mask,
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block-button .index-pbr-mask {
+  width: 100%;
+  height: 100%;
+  padding: 20%;
+  left: 20%;
+  opacity: 0;
+  transition: ease 0.5s;
+  position: absolute;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+}
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block .index-pbr-mask p,
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block-button .index-pbr-mask p {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block .index-pbr-mask .index-pbr-mask-sm,
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block-button .index-pbr-mask .index-pbr-mask-sm {
+  font-size: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block .index-pbr-mask .mask-num,
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block-button .index-pbr-mask .mask-num {
+  position: absolute;
+  right: 20%;
+  bottom: 5%;
+}
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block .index-pbr-prev,
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block-button .index-pbr-prev,
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block .index-pbr-next,
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block-button .index-pbr-next {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block .index-pbr-prev i,
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block-button .index-pbr-prev i,
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block .index-pbr-next i,
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block-button .index-pbr-next i {
+  font-size: 50px;
+}
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block .index-pbr-prev::after,
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block-button .index-pbr-prev::after {
+  content: " ";
+  width: 2px;
+  height: 30%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #343434;
+  position: absolute;
+}
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-mask-active {
+  left: 0 !important;
+  opacity: 1 !important;
+}
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-block:hover .index-pbr-mask {
+  left: 0;
+  opacity: 1;
+}
+main #index-product-container .main-center .index-product-block .index-pb-right .index-pbr-span:after {
+  right: -6%;
+}
+main #index-case-container {
+  width: 100%;
+  height: 500px;
+  margin-top: 11%;
+  padding: 60px 0;
+  background: #F5F5F5;
+}
+main #index-case-container .main-center {
+  height: 100%;
+  position: relative;
+}
+main #index-case-container .main-center .index-case-block {
+  width: 100%;
+  position: absolute;
+}
+main #index-case-container .main-center .index-case-block .case-slide {
+  margin-top: 8%;
+  height: 350px;
+}
+main #index-case-container .main-center .index-case-block .index-case-rt {
+  position: absolute;
+  right: 0;
+  top: -50%;
+}
+main #index-case-container .main-center .index-case-block .index-case-rt p {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+main #index-case-container .main-center .index-case-block .index-case-rt span {
+  position: relative;
+  left: 70%;
+}
+main #index-case-container .main-center .index-case-block .index-case-rt span::after {
+  content: " ";
+  width: 50%;
+  height: 1px;
+  top: 50%;
+  right: -80%;
+  background: #343434;
+  position: absolute;
+}
+main #index-case-container .main-center .index-case-block .index-case-left {
+  width: 50%;
+  height: 100%;
+}
+main #index-case-container .main-center .index-case-block .index-case-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main #index-case-container .main-center .index-case-block .index-case-right {
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  background: white;
+  bottom: 0;
+  right: 0;
+  padding: 4% 7% 1%;
+}
+main #index-case-container .main-center .index-case-block .index-case-right .index-cr-title {
+  font-size: 20px;
+  padding-bottom: 30px;
+  transition: ease 0.3s;
+}
+main #index-case-container .main-center .index-case-block .index-case-right .index-cr-content {
+  color: #959595;
+  font-size: 18px;
+  line-height: 28px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+main #index-case-container .main-center .index-case-block .index-case-right a {
+  position: absolute;
+  bottom: 10%;
+  transition: ease 0.3s;
+}
+main #index-case-container .main-center .index-case-block:hover .index-case-right .index-cr-title {
+  color: #ee1c25;
+}
+main #index-case-container .main-center .index-case-block:hover .index-case-right a {
+  color: #ee1c25;
+}
